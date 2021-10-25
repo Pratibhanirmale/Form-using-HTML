@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>HTML form</title>
+
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        #div1 {
+
+            height: 800px;
+            width: 30%;
+            background-color: khaki;
+            text-align: left;
+            margin-left: 20px;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <div id="div1">
+            <br>
+            <h2> Form using HTML </h2>
+
+            <form action="get">
+                <br>
+
+                First Name - <input type="text" name="Fname" placeholder="enter First name" required >
+                <br><br>
+                Last Name - <input type="text" name="Lname" placeholder="enter Last name">
+                <br><br>
+                Enter Birth Date - <input type="date" value="Bday">
+                <br><br>
+
+                Gender - <input type="radio" name="Gender" value="Female">Female
+                <input type="radio" name="Gender" value="Male">Male
+                <input type="radio" name="Gender" value="Other">Other
+                <br><br>
+
+                Email ID - <input type="email" name="email" placeholder="enter Email ID" required>
+                <br><br>
+                Enter password - <input type="password" name="pwd" required>
+                <br><br>
+
+                Enter contact details - <input type="number" required>
+                <br><br>
+
+                Select your city - <select name="city" id="city">
+                    <option value="blank"></option>
+                    <option value="other">other</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Banglore">Banglore</option>
+                </select>
+                <br><br>
+
+                Please select the languages known - <br>
+                <div>
+                    <input type="checkbox" name="Marathi" value="Marathi">Marathi
+                    <br>
+                    <input type="checkbox" name="Hindi" value="Hindi">Hindi
+                    <br>
+                    <input type="checkbox" name="English" value="English">English
+                    <br>
+                </div>
+                <br>
+
+                Enter Engineering Stream -
+                <input list="branch" name="branch">
+                <datalist id="branch">
+                    <option value="Computer engineering"></option>
+                    <option value="E&TC engineering"></option>
+                    <option value="Civil engineering"></option>
+                    <option value="Chemical engineering"></option>
+                    <option value="Electrical engineering"></option>
+                </datalist>
+                <br><br>
+
+                Upload resume - <input type="file" name="resume" required>
+                <br><br>
+
+                Additional information - <br>
+                <textarea name="info" id="" cols="50" rows="2"></textarea>
+
+                <br><br><br>
+                &emsp;&emsp;&emsp;&emsp;
+                <input type="submit" name="submit" value="Submit"> &emsp;&emsp;&emsp;&emsp;
+                <input type="reset" name="reset" value="Reset">
+
+
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
